@@ -43,5 +43,9 @@ class App(consumer: Consumer) extends Templates with unfiltered.filter.Plan {
       expected(params) orFail { fails =>
         BadRequest ~> ResponseString(fails.map { _.error } mkString(". "))
       }
+      
+    case GET(Path(Seg("tokens" :: "delete" ::  key :: Nil), _)) =>
+      tmap -= key
+      Redirect("/")
   }
 }
