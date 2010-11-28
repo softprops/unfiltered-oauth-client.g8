@@ -6,7 +6,6 @@ class Project(info: ProjectInfo) extends DefaultProject(info) {
   // unfiltered
   lazy val uff = "net.databinder" %% "unfiltered-filter" % uf_version
   lazy val ufj = "net.databinder" %% "unfiltered-jetty" % uf_version
-  lazy val ufoa = "net.databinder" %% "unfiltered-oauth" % uf_version
   
   val doa = "net.databinder" %% "dispatch-oauth" % "0.7.8-SNAPSHOT"
   

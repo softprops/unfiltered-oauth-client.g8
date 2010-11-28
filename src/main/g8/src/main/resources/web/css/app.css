@@ -6,7 +6,6 @@
 body { 
   font-family:helvetica, arial, sans-serif;
   font-size:18px;
-  background:#DAFFFF;
 }
 
 ul, li {
@@ -19,10 +18,10 @@ ul, li {
 }
 
 a:link, a:visited {
-  color:#635446;
+  color:#4AE7FC;
   text-decoration:none;
 }
 
 a:hover {
-  color:#AA9F94;
+  color:#99F3FF;
 }
