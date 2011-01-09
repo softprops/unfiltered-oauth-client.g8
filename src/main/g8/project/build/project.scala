@@ -1,14 +1,18 @@
 import sbt._
 
 class Project(info: ProjectInfo) extends DefaultProject(info) {
-  val uf_version = "0.2.2-SNAPSHOT"
-  
+  val uf_version = "0.3.0-SNAPSHOT"
+  val db_version = "0.7.8"
+
   // unfiltered
-  lazy val uff = "net.databinder" %% "unfiltered-filter" % uf_version
-  lazy val ufj = "net.databinder" %% "unfiltered-jetty" % uf_version
-  
-  val doa = "net.databinder" %% "dispatch-oauth" % "0.7.8-SNAPSHOT"
-  
+  val uff = "net.databinder" %% "unfiltered-filter" % uf_version
+  val ufj = "net.databinder" %% "unfiltered-jetty" % uf_version
+  val ufjs = "net.databinder" %% "unfiltered-json" % uf_version
+
+  val dljs = "net.databinder" %% "dispatch-lift-json" % db_version
+  val djs = "net.databinder" %% "dispatch-json" % db_version
+  val doa = "net.databinder" %% "dispatch-oauth" % db_version
+
   // logging
   val javaNetRepo = "Java.net Repository for Maven" at "http://download.java.net/maven/2"
   val newReleaseToolsRepository = ScalaToolsSnapshots
