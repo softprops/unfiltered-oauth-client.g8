@@ -13,7 +13,6 @@ import dispatch.json._
 import dispatch.liftjson.Js._
 
 import net.liftweb.json._
-import net.liftweb.json.JsonAST._
 import net.liftweb.json.JsonDSL._
 
 import org.clapper.avsl.Logger
